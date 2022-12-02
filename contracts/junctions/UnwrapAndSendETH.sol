@@ -16,7 +16,11 @@ interface IWETH {
 contract UnwrapAndSendETH {
     receive() external payable {}
 
-    address constant WETH = 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2;
+    address public immutable WETH;
+
+    constructor(address wethAddress) {
+        WETH = wethAddress;
+    }
 
     /// @notice Unwrap WETH and send ETH to the specified address
     /// @dev Make sure to load WETH into this contract before calling this function
