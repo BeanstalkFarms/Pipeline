@@ -16,6 +16,10 @@ them from Pipeline, in a single transaction.
 
 The latest version of the Pipeline Whitepaper is available [here](https://evmpipeline.org/pipeline.pdf) (version history can be found [here](https://github.com/BeanstalkFarms/Pipeline-Whitepaper/tree/main/version-history)).
 
+## Audits
+
+Read Halborn's final audit report [here](https://bean.money/11-15-22-pipeline-halborn-report).
+
 ## Bug Bounty Program
 
 Pipeline and Depot are both considered in-scope of the Beanstalk Immunefi Bug Bounty Program.
