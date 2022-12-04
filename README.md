@@ -1,4 +1,4 @@
-<img src="https://github.com/BeanstalkFarms/Beanstalk-Assets/blob/main/Pipeline/pipeline.svg" alt="Pipeline logo" align="right" width="120" />
+<img src="https://github.com/BeanstalkFarms/Beanstalk-Brand-Assets/blob/main/Pipeline/pipeline.svg" alt="Pipeline logo" align="right" width="120" />
 
 # Pipeline
 
