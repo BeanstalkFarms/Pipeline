@@ -5,7 +5,7 @@
 Perform an arbitrary series of actions in the EVM in a single transaction: [evmpipeline.org](https://evmpipeline.org)
 
 Code Version: `1.0.0` <br>
-Whitepaper Version `1.0.1`
+Whitepaper Version: `1.0.1`
 
 Pipeline is a standalone contract that creates a sandbox to execute an arbitrary composition of valid
 actions within the EVM in a single transaction using Ether. Depot is a wrapper for Pipeline that
@@ -14,7 +14,7 @@ them from Pipeline, in a single transaction.
 
 ## Documentation
 
-The latest version of the Pipeline Whitepaper is available [here](https://evmpipeline.org/pipeline.pdf) (version history can be found [here](https://github.com/BeanstalkFarms/Pipeline-Whitepaper/tree/main/version-history)).
+* [Pipeline Whitepaper](https://evmpipeline.org/pipeline.pdf) ([Version History](https://github.com/BeanstalkFarms/Pipeline-Whitepaper/tree/main/version-history)).
 
 ## Audits
 
