@@ -7,11 +7,11 @@ import "@openzeppelin/contracts/drafts/IERC20Permit.sol";
 import "@openzeppelin/contracts/token/ERC1155/IERC1155.sol";
 import "@openzeppelin/contracts/token/ERC721/IERC721.sol";
 import "@openzeppelin/contracts/token/ERC20/SafeERC20.sol";
-import "./facets/DepotFacet.sol";
-import "./facets/TokenSupportFacet.sol";
-import "./interfaces/IBeanstalk.sol";
-import "./interfaces/IERC4494.sol";
-import "./libraries/LibFunction.sol";
+import "../beanstalk/farm/DepotFacet.sol";
+import "../beanstalk/farm/TokenSupportFacet.sol";
+import "../interfaces/IBeanstalkTransfer.sol";
+import "../interfaces/IERC4494.sol";
+import "../libraries/LibFunction.sol";
 
 /**
  * @title Depot
@@ -25,8 +25,8 @@ contract Depot is DepotFacet, TokenSupportFacet {
 
     using SafeERC20 for IERC20;
 
-    IBeanstalk private constant beanstalk =
-        IBeanstalk(0xC1E088fC1323b20BCBee9bd1B9fC9546db5624C5);
+    IBeanstalkTransfer private constant beanstalk =
+        IBeanstalkTransfer(0xC1E088fC1323b20BCBee9bd1B9fC9546db5624C5);
 
     /**
      * 
@@ -88,11 +88,11 @@ contract Depot is DepotFacet, TokenSupportFacet {
         address sender,
         address recipient,
         address token,
-        uint32 season,
+        int96 stem,
         uint256 amount
     ) external payable returns (uint256 bdv) {
         require(sender == msg.sender, "invalid sender");
-        bdv = beanstalk.transferDeposit(msg.sender, recipient, token, season, amount);
+        bdv = beanstalk.transferDeposit(msg.sender, recipient, token, stem, amount);
     }
 
     /**
@@ -103,11 +103,11 @@ contract Depot is DepotFacet, TokenSupportFacet {
         address sender,
         address recipient,
         address token,
-        uint32[] calldata seasons,
+        int96[] calldata stems,
         uint256[] calldata amounts
     ) external payable returns (uint256[] memory bdvs) {
         require(sender == msg.sender, "invalid sender");
-        bdvs = beanstalk.transferDeposits(msg.sender, recipient, token, seasons, amounts);
+        bdvs = beanstalk.transferDeposits(msg.sender, recipient, token, stems, amounts);
     }
 
     /**
