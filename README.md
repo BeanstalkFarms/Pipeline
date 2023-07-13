@@ -31,13 +31,13 @@ You can find the program and submit bug reports [here](https://immunefi.com/boun
 ### V1.0.1 (Current):
 |  Contract  |              Address 
 |:-----------|:-----------------------------------------------------------------------------------------------------------------------|
-|  Pipeline  | [0xb1bE0000bFdcDDc92A8290202830C4Ef689dCeaa](https://etherscan.io/address/0xb1bE0000bFdcDDc92A8290202830C4Ef689dCeaa)  |
-|  Depot     | [0xDEb0f000082fD56C10f449d4f8497682494da84D](https://etherscan.io/address/0xDEb0f000082fD56C10f449d4f8497682494da84D)  |
+|  Pipeline  | [0xb1bE0000C6B3C62749b5F0c92480146452D15423](https://etherscan.io/address/0xb1bE0000C6B3C62749b5F0c92480146452D15423)  |
+|  Depot     | [0xDEb0f00071497a5cc9b4A6B96068277e57A82Ae2](https://etherscan.io/address/0xDEb0f00071497a5cc9b4A6B96068277e57A82Ae2)  |
 
 #### Changelog
-- Add `recieve` function fallback to Depot and Pipeline.
+- Add `receive` function fallback to Depot and Pipeline.
 - Add `version` function to Depot and Pipeline.
-- Update `transferDeposit(s)` to Depoot to account for BIP-36.
+- Update `transferDeposit(s)` to Depot to account for BIP-36.
 
 ### V1.0.0
 |  Contract  |              Address 
