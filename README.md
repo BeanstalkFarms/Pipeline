@@ -4,7 +4,7 @@
 
 Perform an arbitrary series of actions in the EVM in a single transaction: [evmpipeline.org](https://evmpipeline.org)
 
-Code Version: `1.0.0` <br>
+Code Version: `1.0.1` <br>
 Whitepaper Version: `1.0.2`
 
 Pipeline is a standalone contract that creates a sandbox to execute an arbitrary composition of valid
