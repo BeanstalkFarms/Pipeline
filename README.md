@@ -28,6 +28,18 @@ You can find the program and submit bug reports [here](https://immunefi.com/boun
 
 ## Contracts
 
+### V1.0.1 (Current):
+|  Contract  |              Address 
+|:-----------|:-----------------------------------------------------------------------------------------------------------------------|
+|  Pipeline  | [0xb1bE0000bFdcDDc92A8290202830C4Ef689dCeaa](https://etherscan.io/address/0xb1bE0000bFdcDDc92A8290202830C4Ef689dCeaa)  |
+|  Depot     | [0xDEb0f000082fD56C10f449d4f8497682494da84D](https://etherscan.io/address/0xDEb0f000082fD56C10f449d4f8497682494da84D)  |
+
+#### Changelog
+- Add `recieve` function fallback to Depot and Pipeline.
+- Add `version` function to Depot and Pipeline.
+- Update `transferDeposit(s)` to Depoot to account for BIP-36.
+
+### V1.0.0
 |  Contract  |              Address 
 |:-----------|:-----------------------------------------------------------------------------------------------------------------------|
 |  Pipeline  | [0xb1bE0000bFdcDDc92A8290202830C4Ef689dCeaa](https://etherscan.io/address/0xb1bE0000bFdcDDc92A8290202830C4Ef689dCeaa)  |
