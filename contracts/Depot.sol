@@ -29,6 +29,18 @@ contract Depot is DepotFacet, TokenSupportFacet {
         IBeanstalk(0xC1E088fC1323b20BCBee9bd1B9fC9546db5624C5);
 
     /**
+     * @dev So Depot can receive Ether.
+     */
+    receive() external payable {}
+
+    /**
+     * @dev Returns the current version of Depot.
+     */
+    function version() external pure returns (string memory) {
+        return "1.0.1";
+    }
+
+    /**
      * 
      * Farm
      * 
@@ -88,11 +100,11 @@ contract Depot is DepotFacet, TokenSupportFacet {
         address sender,
         address recipient,
         address token,
-        uint32 season,
+        int96 stem,
         uint256 amount
     ) external payable returns (uint256 bdv) {
         require(sender == msg.sender, "invalid sender");
-        bdv = beanstalk.transferDeposit(msg.sender, recipient, token, season, amount);
+        bdv = beanstalk.transferDeposit(msg.sender, recipient, token, stem, amount);
     }
 
     /**
@@ -103,11 +115,11 @@ contract Depot is DepotFacet, TokenSupportFacet {
         address sender,
         address recipient,
         address token,
-        uint32[] calldata seasons,
+        int96[] calldata stems,
         uint256[] calldata amounts
     ) external payable returns (uint256[] memory bdvs) {
         require(sender == msg.sender, "invalid sender");
-        bdvs = beanstalk.transferDeposits(msg.sender, recipient, token, seasons, amounts);
+        bdvs = beanstalk.transferDeposits(msg.sender, recipient, token, stems, amounts);
     }
 
     /**

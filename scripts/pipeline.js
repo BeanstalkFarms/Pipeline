@@ -1,8 +1,8 @@
 var fs = require('fs');
 const { impersonateSigner, mintEth, deployAtNonce } = require('../utils');
 
-const PIPELINE = '0xb1bE0000bFdcDDc92A8290202830C4Ef689dCeaa'
-const PIPELINE_DEPLOYER = '0x36585Dee035286F41d842DD858aCA1ddF1d00925'
+const PIPELINE = '0xb1bE0000C6B3C62749b5F0c92480146452D15423'
+const PIPELINE_DEPLOYER = '0x77e7C6E889dE7a14744d29899Ba097379aeE06Ab'
 
 async function deploy(account=undefined) {
   if (account == undefined) {

@@ -3,8 +3,8 @@ const { DEPOT, DEPOT_DEPLOYER } = require('../test/utils/constants');
 const { impersonateSigner, mintEth } = require('../utils');
 const { deployAtNonce } = require('./contracts');
 
-const DEPOT = '0xDEb0f000082fD56C10f449d4f8497682494da84D'
-const DEPOT_DEPLOYER = '0x2ab5D0acF1A61A2D6935f8Cfb2B1CAA2Fc3Ffbda'
+const DEPOT = '0xDEb0f00071497a5cc9b4A6B96068277e57A82Ae2'
+const DEPOT_DEPLOYER = '0x058a783D98cDBB78d403c6B613C17d6b96f20d06'
 
 async function deploy(account=undefined) {
   if (account == undefined) {
