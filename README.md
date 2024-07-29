@@ -5,7 +5,7 @@
 Perform an arbitrary series of actions in the EVM in a single transaction: [evmpipeline.org](https://evmpipeline.org)
 
 Code Version: `1.0.1` <br>
-Whitepaper Version: `1.0.4`
+Whitepaper Version: `1.0.5`
 
 Pipeline is a standalone contract that creates a sandbox to execute an arbitrary composition of valid
 actions within the EVM in a single transaction using Ether. Depot is a wrapper for Pipeline that
